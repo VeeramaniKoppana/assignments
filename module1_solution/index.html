@@ -5,8 +5,8 @@
     </head>
     <body>
         <div ng-controller="LunchCheckController">
-            <input placeholder="Enter comma-separated items" ng-model="items" type="text">   DO NOT ENTER EMPTY ITEM
-            <p>{{message}}</p>
+            <input placeholder="Enter comma-separated items" ng-style="{'border-color':color_change}" ng-model="items" type="text">   DO NOT ENTER EMPTY ITEM
+            <p ng-style="{'color':color_change}">{{message}}</p>
             <button type="button" ng-click="checkItems()">Check If Too Much</button>
         </div>
     </body>
